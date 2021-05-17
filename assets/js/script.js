@@ -14,8 +14,10 @@ const app = new Vue({
        // console.log(elem.data.response);
         this.eMails.push(elem.data.response)
       })
+      .catch(err =>{
+        console.log(err);
+      })
     }
-      console.log(this.eMails);
 
   },
   
